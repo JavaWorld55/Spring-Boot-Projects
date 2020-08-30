@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: scott
+    password: tiger
+     
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update    
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.Oracle10gDialect
+server:
+  port: 7070 
+  
